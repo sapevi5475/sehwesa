@@ -1,6 +1,9 @@
 name: win_autotodesk
 
-on: [workflow_dispatch,repository_dispatch]
+on: 
+  repository_dispatch:
+    types:
+      - wehoohk-1
 
 jobs:
   build:
